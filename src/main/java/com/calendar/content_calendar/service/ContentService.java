@@ -2,19 +2,16 @@ package com.calendar.content_calendar.service;
 
 import com.calendar.content_calendar.model.Content;
 import com.calendar.content_calendar.repository.ContentRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@AllArgsConstructor
 public class ContentService {
     private final ContentRepository contentRepository;
-
-    // Constructor Injection (Spring automatically injects the repository)
-    public ContentService(ContentRepository contentRepository) {
-        this.contentRepository = contentRepository;
-    }
 
     // Method to get all content
     public List<Content> getAllContent() {
