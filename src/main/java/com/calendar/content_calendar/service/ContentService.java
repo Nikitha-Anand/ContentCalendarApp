@@ -34,7 +34,7 @@ public class ContentService {
         });
     }
 
-    // Method to delete an existing content
+    // Method to delete a content
     public boolean deleteContent(Integer id) {
         if (contentRepository.existsById(id)) {
             contentRepository.deleteById(id);
