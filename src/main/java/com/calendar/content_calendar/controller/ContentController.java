@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/content")
 public class ContentController {

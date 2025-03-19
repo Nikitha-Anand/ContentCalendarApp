@@ -1,0 +1,47 @@
+<h1 id="heading">Content Calendar</h1>
+
+@if (isLoading) {
+  <div class=""></div>
+}
+
+@if (errorMessage) {
+  <p class="error-message">{{ errorMessage }}</p>
+}
+
+@if (!isLoading && contentList.length > 0) {
+  <table class="table table-striped">
+    <thead class="table-success">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Date Created</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (content of contentList; track content.id) {
+        <tr>
+          <td>{{ content.title }}</td>
+          <td>{{ content.description }}</td>
+          <td>{{ content.date }}</td>
+          <td>
+            <button class="edit-btn" (click)="openEditModal(content)"> Edit</button>
+            <button class="delete-btn" (click)="removeContent(content.id)"> Delete</button>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}
+
+@if (!isLoading && contentList.length === 0) {
+  <p>No content available. Add some!</p>
+}
+
+@if (isEditModalOpen) {
+  <app-edit-content 
+    [content]="selectedContent" 
+    (close)="isEditModalOpen = false">
+  </app-edit-content>
+}
+
