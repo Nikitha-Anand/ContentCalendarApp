@@ -44,7 +44,7 @@ A **Spring Boot + Angular** application for managing content efficiently with fu
 
 - Clone the repository:  
    ```sh
-   git clone https://github.com/Nikitha-Anand/content-calendar.git
+   git clone https://github.com/Nikitha-Anand/ContentCalendarApp.git
    cd content-calendar/backend
   
 ### **Configure MySQL database in application.properties**
