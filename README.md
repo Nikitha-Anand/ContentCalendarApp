@@ -59,7 +59,7 @@ A **Spring Boot + Angular** application for managing content efficiently with fu
 ### **Setup Frontend (Angular)** 
 - Navigate to the Frontend Directory:
   ```sh
-  cd content-calendar/frontend
+  cd src/main/content-calendar-frontend
 
 - Install Project Dependencies:
   ```sh
