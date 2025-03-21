@@ -1,13 +1,13 @@
 # Content Calendar Application  
 
-A **Spring Boot + Angular** application for managing content efficiently with full **CRUD** (Create, Read, Update, Delete) operations. This project provides a structured way to organize and track content over time using a RESTful backend and a dynamic frontend.
+A **Spring Boot + Angular** application for managing text-based content efficiently with full **CRUD** (Create, Read, Update, Delete) operations. This project provides a structured way to organize and track content over time using a RESTful backend and a dynamic frontend.
 
 ---
 
 ## Features  
 
-- **Create** new content entries  
-- **Read** and display existing content  
+- **Create** new text content entries  
+- **Read** and display existing text content  
 - **Update** content details in an intuitive UI  
 - **Delete** unnecessary content  
 - **RESTful API** for seamless integration  
